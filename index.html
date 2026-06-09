@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Book Borrow Tracker</title>
+  <link rel="stylesheet" href="style.css">
+
+ 
+</head>
+<body>
+
+  <h1>📚 Book Borrow Tracker</h1>
+
+  <form id="bookForm">
+    <input type="text" id="title" placeholder="Book Title" required />
+    <input type="text" id="author" placeholder="Author" />
+    <input type="text" id="borrower" placeholder="Borrower Name" required />
+    <input type="date" id="borrowDate" required />
+    <input type="date" id="dueDate" required />
+    <button type="submit">Add Book</button>
+  </form>
+
+  <table id="bookTable">
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Borrower</th>
+        <th>Borrowed On</th>
+        <th>Due Date</th>
+        <th>Status</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Book entries go here -->
+    </tbody>
+  </table>
+
+  <script src="script.js"></script>
+
+ 
+</body>
+</html>
